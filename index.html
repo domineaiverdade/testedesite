@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Site futurista de ciência com simulações, artigos e equipe visionária."/>
+    <title>CiênciaFutura</title>
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS via CDN (v3.x) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#1e90ff",
+                light: "#63b3ed",
+                dark: "#1a56b3",
+              },
+              accent: "#00e1ff",
+              neutral: "#ffffff",
+              secondary: "#0a2342",
+              card: "#16243a",
+            },
+            fontFamily: {
+              futuristic: ["Orbitron", "sans-serif"],
+            },
+            boxShadow: {
+              futuristic: "0 4px 32px 0 rgba(30,144,255,0.25)",
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Orbitron', 'sans-serif';
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        background: #0a2342;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e90ff;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="bg-secondary text-neutral font-futuristic">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-secondary/80 backdrop-blur-lg shadow-futuristic">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <div class="flex items-center space-x-3">
+          <span class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary via-accent to-white flex items-center justify-center text-secondary font-bold text-2xl shadow-lg">
+            Ψ
+          </span>
+          <span class="text-2xl font-futuristic tracking-widest text-primary font-bold">CiênciaFutura</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-lg font-medium">
+          <a href="#simulacoes" class="text-neutral hover:text-accent transition">Simulações</a>
+          <a href="#artigos" class="text-neutral hover:text-accent transition">Artigos</a>
+          <a href="#equipe" class="text-neutral hover:text-accent transition">Equipe</a>
+          <a href="#contato" class="text-neutral hover:text-accent transition">Contato</a>
+        </nav>
+        <button class="md:hidden flex flex-col space-y-1">
+          <span class="w-7 h-1 bg-primary rounded"></span>
+          <span class="w-7 h-1 bg-primary rounded"></span>
+          <span class="w-7 h-1 bg-primary rounded"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="flex-1">
+
+      <!-- Hero -->
+      <section class="relative flex flex-col items-center justify-center text-center py-20 md:py-32">
+        <div class="absolute inset-0 pointer-events-none opacity-30 bg-gradient-radial from-accent via-transparent to-secondary z-0"></div>
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-neutral z-10 drop-shadow-xl">
+          Bem-vindo ao <span class="text-accent">Futuro</span> da Ciência
+        </h1>
+        <p class="mt-6 text-xl md:text-2xl max-w-2xl mx-auto text-primary z-10">
+          Descubra simulações inovadoras, artigos de ponta e as mentes que estão moldando o amanhã.
+        </p>
+        <div class="mt-10 flex flex-col md:flex-row gap-6 z-10">
+          <a href="#simulacoes" class="px-8 py-3 rounded-full bg-primary hover:bg-accent text-white font-semibold shadow-futuristic transition">Explorar Simulações</a>
+          <a href="#artigos" class="px-8 py-3 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold shadow-futuristic transition">Ler Artigos</a>
+        </div>
+        <!-- Imagem simulada -->
+        <div class="mt-16 flex justify-center">
+          <div class="relative w-80 h-56 md:w-[500px] md:h-72 rounded-3xl overflow-hidden shadow-futuristic border-4 border-accent bg-gradient-to-tr from-primary/50 to-accent/40 flex items-center justify-center">
+            <svg viewBox="0 0 500 300" fill="none" class="w-full h-full">
+              <ellipse cx="250" cy="150" rx="220" ry="95" fill="#1e90ff" opacity="0.2" />
+              <circle cx="140" cy="120" r="48" fill="#00e1ff" opacity="0.6" />
+              <rect x="300" y="70" width="120" height="90" rx="20" fill="#3fd0ff" opacity="0.3" />
+              <path d="M80 220 Q250 100 420 220" stroke="#fff" stroke-width="8" fill="none" opacity="0.4"/>
+              <circle cx="250" cy="150" r="30" fill="#fff" opacity="0.9"/>
+              <circle cx="260" cy="160" r="8" fill="#00e1ff" opacity="1"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <div class="max-w-7xl mx-auto px-6 py-16 grid gap-20">
+
+        <!-- Simulações -->
+        <section id="simulacoes" class="flex flex-col gap-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary">Simulações Interativas</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card Simulação -->
+            <div class="rounded-2xl bg-card shadow-futuristic p-6 flex flex-col items-center group hover:scale-105 transition">
+              <div class="w-28 h-28 mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-accent shadow-lg">
+                <svg width="60" height="60" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="28" fill="#00e1ff" opacity="0.2" />
+                  <rect x="18" y="18" width="24" height="24" rx="8" fill="#1e90ff" opacity="0.8"/>
+                  <circle cx="36" cy="36" r="6" fill="#00e1ff" opacity="0.7" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-neutral">Simulação 1</h3>
+              <p class="mt-2 text-primary text-center">Experimente fenômenos científicos em tempo real com interatividade e visualizações imersivas.</p>
+              <button class="mt-5 px-6 py-2 rounded-full bg-accent text-secondary font-bold shadow hover:bg-primary hover:text-white transition">Iniciar</button>
+            </div>
+            <div class="rounded-2xl bg-card shadow-futuristic p-6 flex flex-col items-center group hover:scale-105 transition">
+              <div class="w-28 h-28 mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-accent shadow-lg">
+                <svg width="60" height="60" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="28" fill="#00e1ff" opacity="0.2" />
+                  <rect x="18" y="18" width="24" height="24" rx="8" fill="#1e90ff" opacity="0.8"/>
+                  <circle cx="36" cy="36" r="6" fill="#00e1ff" opacity="0.7" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-neutral">Simulação 2</h3>
+              <p class="mt-2 text-primary text-center">Experimente fenômenos científicos em tempo real com interatividade e visualizações imersivas.</p>
+              <button class="mt-5 px-6 py-2 rounded-full bg-accent text-secondary font-bold shadow hover:bg-primary hover:text-white transition">Iniciar</button>
+            </div>
+            <div class="rounded-2xl bg-card shadow-futuristic p-6 flex flex-col items-center group hover:scale-105 transition">
+              <div class="w-28 h-28 mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center border-4 border-accent shadow-lg">
+                <svg width="60" height="60" viewBox="0 0 60 60">
+                  <circle cx="30" cy="30" r="28" fill="#00e1ff" opacity="0.2" />
+                  <rect x="18" y="18" width="24" height="24" rx="8" fill="#1e90ff" opacity="0.8"/>
+                  <circle cx="36" cy="36" r="6" fill="#00e1ff" opacity="0.7" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-neutral">Simulação 3</h3>
+              <p class="mt-2 text-primary text-center">Experimente fenômenos científicos em tempo real com interatividade e visualizações imersivas.</p>
+              <button class="mt-5 px-6 py-2 rounded-full bg-accent text-secondary font-bold shadow hover:bg-primary hover:text-white transition">Iniciar</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Artigos -->
+        <section id="artigos" class="flex flex-col gap-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary">Artigos em Destaque</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col md:flex-row gap-6 bg-card rounded-2xl shadow-futuristic p-6 hover:scale-105 transition">
+              <div class="flex-shrink-0 w-full md:w-48 h-36 rounded-xl bg-gradient-to-br from-accent via-primary to-white flex items-center justify-center">
+                <svg width="100" height="80" viewBox="0 0 100 80">
+                  <rect x="10" y="20" width="80" height="40" rx="10" fill="#1e90ff" opacity="0.3" />
+                  <circle cx="50" cy="40" r="20" fill="#00e1ff" opacity="0.5" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl md:text-2xl font-bold text-neutral">O Futuro da Inteligência Artificial</h3>
+                <p class="mt-2 text-primary">Uma análise sobre os caminhos da IA na ciência e suas aplicações revolucionárias, com base em pesquisas recentes.</p>
+                <a href="#" class="mt-3 inline-block text-accent font-semibold hover:underline">Ler artigo</a>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6 bg-card rounded-2xl shadow-futuristic p-6 hover:scale-105 transition">
+              <div class="flex-shrink-0 w-full md:w-48 h-36 rounded-xl bg-gradient-to-br from-accent via-primary to-white flex items-center justify-center">
+                <svg width="100" height="80" viewBox="0 0 100 80">
+                  <rect x="10" y="20" width="80" height="40" rx="10" fill="#1e90ff" opacity="0.3" />
+                  <circle cx="50" cy="40" r="20" fill="#00e1ff" opacity="0.5" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl md:text-2xl font-bold text-neutral">Biotecnologia e o Amanhã</h3>
+                <p class="mt-2 text-primary">Descubra os avanços que vão transformar a saúde, a alimentação e o nosso modo de vida.</p>
+                <a href="#" class="mt-3 inline-block text-accent font-semibold hover:underline">Ler artigo</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Equipe -->
+        <section id="equipe" class="flex flex-col gap-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary">Equipe Visionária</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center bg-card rounded-2xl p-6 shadow-futuristic">
+              <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 border-4 border-primary shadow-lg">
+                <svg width="48" height="48" viewBox="0 0 48 48">
+                  <circle cx="24" cy="20" r="12" fill="#fff" opacity="0.8" />
+                  <rect x="10" y="32" width="28" height="10" rx="5" fill="#1e90ff" opacity="0.2" />
+                </svg>
+              </div>
+              <span class="text-lg font-bold text-neutral">Alice</span>
+              <span class="text-primary text-sm">Cientista</span>
+            </div>
+            <div class="flex flex-col items-center bg-card rounded-2xl p-6 shadow-futuristic">
+              <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 border-4 border-primary shadow-lg">
+                <svg width="48" height="48" viewBox="0 0 48 48">
+                  <circle cx="24" cy="20" r="12" fill="#fff" opacity="0.8" />
+                  <rect x="10" y="32" width="28" height="10" rx="5" fill="#1e90ff" opacity="0.2" />
+                </svg>
+              </div>
+              <span class="text-lg font-bold text-neutral">Bruno</span>
+              <span class="text-primary text-sm">Cientista</span>
+            </div>
+            <div class="flex flex-col items-center bg-card rounded-2xl p-6 shadow-futuristic">
+              <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 border-4 border-primary shadow-lg">
+                <svg width="48" height="48" viewBox="0 0 48 48">
+                  <circle cx="24" cy="20" r="12" fill="#fff" opacity="0.8" />
+                  <rect x="10" y="32" width="28" height="10" rx="5" fill="#1e90ff" opacity="0.2" />
+                </svg>
+              </div>
+              <span class="text-lg font-bold text-neutral">Clara</span>
+              <span class="text-primary text-sm">Cientista</span>
+            </div>
+            <div class="flex flex-col items-center bg-card rounded-2xl p-6 shadow-futuristic">
+              <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3 border-4 border-primary shadow-lg">
+                <svg width="48" height="48" viewBox="0 0 48 48">
+                  <circle cx="24" cy="20" r="12" fill="#fff" opacity="0.8" />
+                  <rect x="10" y="32" width="28" height="10" rx="5" fill="#1e90ff" opacity="0.2" />
+                </svg>
+              </div>
+              <span class="text-lg font-bold text-neutral">Diego</span>
+              <span class="text-primary text-sm">Cientista</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="flex flex-col gap-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-primary">Contato</h2>
+          <form class="max-w-2xl mx-auto bg-card rounded-2xl shadow-futuristic p-8 flex flex-col gap-6">
+            <div class="flex flex-col md:flex-row gap-6">
+              <input type="text" placeholder="Nome" class="flex-1 px-4 py-3 rounded-lg bg-neutral/10 border-2 border-primary focus:border-accent outline-none text-primary font-medium" />
+              <input type="email" placeholder="Email" class="flex-1 px-4 py-3 rounded-lg bg-neutral/10 border-2 border-primary focus:border-accent outline-none text-primary font-medium" />
+            </div>
+            <textarea placeholder="Sua mensagem..." rows="4" class="px-4 py-3 rounded-lg bg-neutral/10 border-2 border-primary focus:border-accent outline-none text-primary font-medium"></textarea>
+            <button class="self-end px-8 py-3 rounded-full bg-accent text-secondary font-bold shadow hover:bg-primary hover:text-white transition">Enviar</button>
+          </form>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary/90 py-8 mt-12 text-neutral shadow-futuristic">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary via-accent to-white flex items-center justify-center text-secondary font-bold text-lg shadow">
+            Ψ
+          </span>
+          <span class="font-bold text-lg tracking-wider">CiênciaFutura</span>
+        </div>
+        <div class="text-sm text-primary/80">
+          © <script>document.write(new Date().getFullYear())</script> CiênciaFutura. Todos os direitos reservados.
+        </div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-accent transition">Instagram</a>
+          <a href="#" class="hover:text-accent transition">Twitter</a>
+          <a href="#" class="hover:text-accent transition">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
