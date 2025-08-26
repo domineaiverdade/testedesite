@@ -13,94 +13,90 @@ Você pode abrir o arquivo `index.html` no seu navegador favorito ou executar vi
 cd pasta_do_site
 python -m http.server 8000
 Acesse: http://localhost:8000
+```
 
-🎨 Tecnologias e Estilo
+---
+
+## 🎨 Tecnologias e Estilo
+
 HTML5 e Tailwind CSS v3 para design responsivo e futurista.
 
-Paleta de cores:
+**Paleta de cores:**
+- Primary: Azul vibrante (#1e90ff)
+- Accent: Ciano (#00e1ff)
+- Secondary / Fundo: Azul escuro (#0a2342)
+- Neutral / Texto: Branco (#ffffff)
 
-Primary: Azul vibrante (#1e90ff)
+**Tipografia:** Orbitron, dando um toque futurista e geek.
 
-Accent: Ciano (#00e1ff)
+**Layout moderno com:**
+- Cards interativos para simulações e artigos
+- Seção de equipe visionária
+- Formulário de contato estilizado
+- Efeitos de hover, sombras e transições suaves
+- Ícones e elementos gráficos minimalistas e futuristas
 
-Secondary / Fundo: Azul escuro (#0a2342)
+---
 
-Neutral / Texto: Branco (#ffffff)
+## 📚 Estrutura do Projeto
 
-Tipografia: Orbitron, dando um toque futurista e geek.
-
-Layout moderno com:
-
-Cards interativos para simulações e artigos
-
-Seção de equipe visionária
-
-Formulário de contato estilizado
-
-Efeitos de hover, sombras e transições suaves
-
-Ícones e elementos gráficos minimalistas e futuristas
-
-📚 Estrutura do Projeto
-pgsql
-Copiar
-Editar
+```
 ├─ index.html
 ├─ favicon.ico
 ├─ README.md
 └─ assets/
    ├─ imagens/
    └─ icones/
-index.html: Página principal com todas as seções.
+```
 
-favicon.ico: Ícone do site.
+- `index.html`: Página principal com todas as seções.
+- `favicon.ico`: Ícone do site.
+- `assets/`: Pasta para imagens e ícones adicionais.
 
-assets/: Pasta para imagens e ícones adicionais.
+---
 
-🧪 Funcionalidades
-Simulações interativas: Experimente fenômenos científicos em tempo real.
+## 🧪 Funcionalidades
 
-Artigos de destaque: Conteúdos baseados em pesquisas recentes.
+- **Simulações interativas:** Experimente fenômenos científicos em tempo real.
+- **Artigos de destaque:** Conteúdos baseados em pesquisas recentes.
+- **Equipe visionária:** Apresentação dos cientistas por trás do projeto.
+- **Formulário de contato:** Envio de mensagens com design futurista.
+- **Design responsivo:** Compatível com desktops, tablets e smartphones.
+- **Efeitos ultra modernos:** Hover, sombras, gradientes e animações leves.
 
-Equipe visionária: Apresentação dos cientistas por trás do projeto.
+---
 
-Formulário de contato: Envio de mensagens com design futurista.
+## 🚀 Como contribuir
 
-Design responsivo: Compatível com desktops, tablets e smartphones.
-
-Efeitos ultra modernos: Hover, sombras, gradientes e animações leves.
-
-🚀 Como contribuir
 Faça um fork do repositório.
 
 Clone para sua máquina:
-
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/seu-usuario/CienciaFutura.git
-Crie uma branch para suas alterações:
+```
 
-bash
-Copiar
-Editar
+Crie uma branch para suas alterações:
+```bash
 git checkout -b minha-feature
+```
+
 Faça commits claros e descritivos.
 
 Abra um Pull Request.
 
-📄 Licença
-Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.
+---
 
-🦾 Contato
-Instagram: @CienciaFutura
+## 📄 Licença
 
-Twitter: @CienciaFutura
+Este projeto está licenciado sob a MIT License. Veja o arquivo `LICENSE` para mais detalhes.
 
-LinkedIn: CienciaFutura
+---
 
-Design e desenvolvimento: Equipe CiênciaFutura 💡
+## 🦾 Contato
+
+Instagram: @CienciaFutura  
+Twitter: @CienciaFutura  
+LinkedIn: CienciaFutura  
+
+Design e desenvolvimento: Equipe CiênciaFutura 💡  
 Estilo: Geek, futurista, interativo e altamente visual.
-
-Copiar
-Editar
